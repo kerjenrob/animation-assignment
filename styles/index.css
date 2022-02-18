@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    background-color: rgb(179, 250, 250);
+}
+svg {
+    animation: circle 3s ease-in-out infinite;
+}
+@keyframes circle {
+    0% {transform: scale(1);}
+    30% {transform: scale(0.5);}
+    60% {transform: scale(1);}
+    80% {transform: scale(1.5);}
+    100% {transform: scale (2);}
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    color: aliceblue;
+    transition-property: all;
+    transition-duration: 2s;
+}
+a :hover {
+    background-color: blue;
+    transform: scale(1.2);
+    transform: rotate(360deg);
+
+}
+.text {
+    font-size: 30px;
+    color: green;
+    
+}
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: red;
+    transition-property: all;
+    transition-duration: 2s;
+    /*transition: all width 2s, height 2s, transform 2s; */
+}
+.sign:hover {
+    width: 600px;
+    height: 200px;
+    /*transform: rotateX(360deg);*/
+}
+p {
+    font-size: 5px;
+}
+p:hover {
+    font-size: 60px;
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
